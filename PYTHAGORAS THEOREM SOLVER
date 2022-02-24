@@ -1,0 +1,18 @@
+side = input("Which side to calculate(a, b, or c hypotenuse): ")
+if side == "a":
+    b = float(input("side b"))
+    c = float(input("side c"))
+    a = (c**2 - b**2)**(1/2)
+    print("length a", a)
+elif side == "b":
+    a = float(input("side a"))
+    c = float(input("hypotenuse c"))
+    b = (c ** 2 - a ** 2) ** (1 / 2)
+    print("length b", b)
+elif side == "c":
+    a = float(input("side a"))
+    b = float(input("side b"))
+    c = (a ** 2 + b ** 2) ** (1 / 2)
+    print("hypo c", c)
+else:
+    print("invalid input!")
